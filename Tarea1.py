@@ -268,6 +268,13 @@ def crearArchivo(hilera,direccion):
                 archivo.close()
         except:
                 print("Error inesperado: ",sys.exc_info()[0])
+
+def intervaloHilera(hilera, inicio,final):
+    if(0 < inicio <= final <= len(hilera)):
+        return hilera[inicio - 1 : final]
+    else:
+        return ""
+
         
 
 ########################################                Main            ##############################################
