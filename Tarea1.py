@@ -269,6 +269,13 @@ def crearArchivo(hilera,direccion):
         except:
                 print("Error inesperado: ",sys.exc_info()[0])
 
+"""
+Obtener un substring a partir de un intervalo de una hilera
+@param {string} hilera - Cadena a utilizar
+@param {int} inicio - posicion de la hilera donde empezar
+@param {int} final - posicion de la hilera donde terminar
+@return {string} substring obtenido
+"""   
 def intervaloHilera(hilera, inicio,final):
     if(0 < inicio <= final <= len(hilera)):
         return hilera[inicio - 1 : final]
